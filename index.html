@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <div class="row">
+          <div class="col-8">
+            <input
+              type="search"
+              placeholder="Search city"
+              autofocus="on"
+              autocomplete="off"
+              id="city-input"
+              class="form-control shadow-sm"
+            />
+          </div>
+          <div class="col-4">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary shadow-sm"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-6">
+          <div class="clearfix">
+            <div class="float-left">
+              <h1 id="city">Amsterdam</h1><span id="date"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <ul class="weather">
+            <li class="weather-now">☁️</li>
+            <li id="description">Cloudy</li>
+          </ul>
+        </div>
+      </div>
+        <h2><span class="temperature" id="temperature"></span
+          ><span class="units">°C</span></h2>
+        <div class="row">
+        <div class="col-5">
+          <ul class="measures">
+						<li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+        </ul>
+        </div>
+          <div class="col-7">
+            <ul class="days">
+            <li><strong>Mon</strong> 8°/4° <span class="emoji">🌦️</span> <hr /></li>
+            <li><strong>Tue</strong> 9°/6° <span class="emoji">🌧</span> <hr /></li>
+            <li><strong>Wed</strong> 8°/6° <span class="emoji">🌧</span> <hr /></li>
+            <li><strong>Thu</strong> 8°/5° <span class="emoji">🌧</span> <hr /></li>
+            <li><strong>Fri</strong> 9°/6° <span class="emoji">☁️</span></li>
+           </ul>
+        </div>
+        <script src="src/index.js"></script>
+    </div>
+  </body>
+  </html>
